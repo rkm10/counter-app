@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='wrapper'>
-        <h1>Counter App</h1>
+        <h1>Counter App in React</h1>
         <h3>Stock Left :10</h3>
         <div className='sub-wrapper'>
           <button className='less' disabled={counter === 0} onClick={
