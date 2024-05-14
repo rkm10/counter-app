@@ -71,3 +71,7 @@ button.plus {
   height: 50px;
   background: #2c711bde;
 }
+
+button:disabled {
+  opacity: 0.2;
+}

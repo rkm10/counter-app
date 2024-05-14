@@ -13,7 +13,7 @@ function App() {
         <h1>Counter App</h1>
         <h3>Stock Left :10</h3>
         <div className='sub-wrapper'>
-          <button className='less' onClick={
+          <button className='less' disabled={counter === 0} onClick={
             () => {
               if (counter > 0) {
                 setCounter(counter - 1)
@@ -21,7 +21,7 @@ function App() {
             }
           }>-</button>
           <p>{counter}</p>
-          <button className='plus' onClick={
+          <button className='plus' disabled={counter === stock} onClick={
             () => {
               if (counter < stock) {
                 setCounter(counter + 1)
